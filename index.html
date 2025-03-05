@@ -12,19 +12,19 @@
   <body>
     <h1 id="top">Todo-list</h1>
     <div>
-      <input type="text" style="font-size: 25px;">
-      <button>create</button><br>
+      <input type="text" style="font-size: 25px;" placeholder="task name" id="taskname">
+      <button onclick="Create_button()">create</button><br>
     </div>
-    <table>
+    <table id="task table">
       <tr>
-        <td><input type="checkbox" id="task1"></td>
-        <td><label for="task1">default task</label></td>
-        <td><button>delete</button></td>
+        <td><input type="checkbox"></td>
+        <td>default task</td>
+        <td><button onclick="Delete_button(this)">delete</button></td>
       </tr>
       <tr>
-        <td><input type="checkbox" id="task2"></td>
-        <td><label for="task2">task2</label><br></td>
-        <td><button>delete</button></td>
+        <td><input type="checkbox"></td>
+        <td>task2</td>
+        <td><button onclick="Delete_button(this)">delete</button></td>
       </tr>
     </table>
     <!--javascripts path-->
