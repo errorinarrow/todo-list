@@ -6,17 +6,20 @@ html {
 
 body {
 	margin: 0 auto;
-	background-color: white;
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
 	padding: 0 20px 20px 20px;
 }
 
 h1 {
 	font-size: 50px;
-    margin: 0;
-    padding: 20px 0;
-    color: #00539f;
-    /*text-shadow: 3px 3px 3px black;*/
-    text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: #00539f;
+	text-align: center;
 }
 
 div {
@@ -37,7 +40,7 @@ td {
 	border: 1px solid rgb(160 160 160);
 	padding: 8px 10px;
 }
-  
+
 td:last-of-type {
 	text-align: left;
 }
