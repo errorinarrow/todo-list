@@ -113,7 +113,7 @@ el.form.addEventListener('submit', async (e) => {
     const title = el.input.value.trim();
     if (!title) return;
     const created = await API.create(title);
-    tasks.unshift(created); // 依建立時間倒序
+    tasks.unshift(created);
     el.input.value = '';
     render();
 });
