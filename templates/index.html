@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
+</head>
+
+<body>
+  <div class="app">
+    <h1>待辦清單</h1>
+
+    <form id="todo-form" autocomplete="off">
+      <input id="todo-input" type="text" placeholder="輸入待辦事項..." maxlength="200" />
+      <button type="submit">新增</button>
+    </form>
+
+    <div id="toolbar">
+      <button id="filter-all" data-filter="all" class="active">全部</button>
+      <button id="filter-active" data-filter="active">未完成</button>
+      <button id="filter-done" data-filter="done">已完成</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <p id="empty-state" class="muted">目前沒有任何任務，來新增一個吧！</p>
+  </div>
+
+  <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+
+</html>
