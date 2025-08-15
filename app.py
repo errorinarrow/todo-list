@@ -29,6 +29,10 @@ def index():
     # 單頁應用；前端用 fetch 呼叫底下 API
     return render_template('index.html')
 
+@app.route('/ping')
+def ping():
+    return "OK", 200
+
 # 取得任務清單
 @app.get('/api/tasks')
 def list_tasks():
